@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta id="meta-desc" name="description" data-en="Momo 24 is a cozy math chain puzzle. Make 24 from four tiles, clear connected numbers, and chase cascading combos." data-zh="萌萌24是一款数字连锁益智游戏。用四个数字算出24，消除相连数字，触发连锁反应。" content="Momo 24 is a cozy math chain puzzle. Make 24 from four tiles, clear connected numbers, and chase cascading combos.">
+  <meta name="theme-color" content="#091629">
+  <title id="title-el" data-en="Momo 24: Math Chain Puzzle | CXY Studio" data-zh="萌萌24：算式连锁消除 | CXY Studio">Momo 24: Math Chain Puzzle | CXY Studio</title>
+  <link rel="icon" href="app_icon.png">
+  <style>
+    :root{color-scheme:dark;--bg:#081426;--surface:#10233a;--surface2:#142b43;--text:#f4f8ff;--muted:#b3c2d5;--cyan:#58dce1;--blue:#70baff;--gold:#ffd33d;--line:rgba(255,255,255,.11)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 5%,#153153 0,transparent 36%),var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--blue);text-decoration:none}a:hover{color:#b3dcff}button,a{touch-action:manipulation}button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}.container{width:min(1120px,100% - 40px);margin:auto}header{padding:22px 0;border-bottom:1px solid var(--line)}nav{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:11px;color:var(--text);font-weight:800;font-size:18px}.brand img{width:44px;height:44px;border-radius:13px}.navlinks{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.navlinks a{color:var(--muted);font-weight:650}.lang{display:flex;gap:4px;padding:4px;background:var(--surface);border-radius:12px}.lang button{border:0;border-radius:9px;background:transparent;color:var(--muted);padding:7px 12px;font:inherit;font-weight:700;cursor:pointer}.lang button.active{background:var(--blue);color:#081426}.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:54px;padding:72px 0 36px}.eyebrow{color:var(--cyan);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,68px);line-height:1.04;letter-spacing:-.035em;margin:12px 0 20px}.hero h1 span{color:var(--gold)}.lead{font-size:20px;color:var(--muted);max-width:620px;margin:0 0 24px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.button{display:inline-flex;justify-content:center;align-items:center;border-radius:14px;padding:13px 19px;background:var(--gold);color:#172033;font-weight:850;box-shadow:0 9px 28px rgba(255,211,61,.18)}.button:hover{color:#172033;filter:brightness(1.06)}.button.secondary{background:transparent;color:var(--text);border:1px solid var(--line);box-shadow:none}.chips{display:flex;gap:9px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:rgba(16,35,58,.72);color:var(--muted);border-radius:999px;padding:6px 11px;font-size:13px}.hero-shot{width:min(100%,390px);justify-self:center;border:1px solid rgba(112,186,255,.3);border-radius:26px;box-shadow:0 24px 80px rgba(0,0,0,.48)}.caption{color:var(--muted);text-align:center;font-size:13px;margin:12px auto 0}.section{padding:60px 0}.section h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 12px;letter-spacing:-.025em}.section-intro{color:var(--muted);max-width:720px;margin:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-top:26px}.card{background:linear-gradient(145deg,rgba(20,43,67,.96),rgba(13,30,50,.96));border:1px solid var(--line);border-radius:19px;padding:22px}.card .icon{font-size:25px}.card h3{margin:8px 0;font-size:19px}.card p{color:var(--muted);margin:0}.steps{counter-reset:steps}.step{position:relative;padding-left:63px}.step:before{counter-increment:steps;content:counter(steps);position:absolute;left:20px;top:22px;width:31px;height:31px;display:grid;place-items:center;border-radius:50%;background:rgba(88,220,225,.16);color:var(--cyan);font-weight:900}.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}.gallery figure{margin:0}.gallery img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:17px;background:#101820;box-shadow:0 14px 38px rgba(0,0,0,.28)}.gallery figcaption{color:var(--muted);font-size:14px;margin-top:9px}.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}.note{color:var(--muted)}footer{border-top:1px solid var(--line);padding:27px 0 40px;color:var(--muted);font-size:14px}.footerrow{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footerlinks{display:flex;gap:16px;flex-wrap:wrap}.small{font-size:14px;color:var(--muted)}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:28px;padding-top:48px}.hero-shot{width:min(78%,360px)}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr}.navlinks{order:3;width:100%;justify-content:center}}
+    @media(max-width:480px){.container{width:min(100% - 28px,1120px)}.grid{grid-template-columns:1fr}.hero h1{font-size:43px}.lead{font-size:18px}.gallery{gap:10px}.gallery figcaption{font-size:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<header><div class="container"><nav aria-label="Main navigation">
+  <a class="brand" href="index.html"><img src="app_icon.png" alt=""><span>Momo 24</span></a>
+  <div class="navlinks"><a href="#features" data-en="Features" data-zh="游戏特色">Features</a><a href="#how-to-play" data-en="How to play" data-zh="玩法介绍">How to play</a><a href="#screenshots" data-en="Screenshots" data-zh="游戏截图">Screenshots</a><a href="support.html" data-en="Support" data-zh="支持" data-en-href="support.html" data-zh-href="zh-Hans/support.html">Support</a></div>
+  <div class="lang" role="group" aria-label="Language"><button id="btn-en" type="button" class="active" aria-pressed="true">EN</button><button id="btn-zh" type="button" aria-pressed="false">中文</button></div>
+</nav></div></header>
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="eyebrow" data-en="A cozy number puzzle" data-zh="轻松又烧脑的数字益智游戏">A cozy number puzzle</div>
+      <h1><span data-en="Momo 24" data-zh="萌萌24">Momo 24</span><br><span data-en="Math Chain Puzzle" data-zh="算式连锁消除">Math Chain Puzzle</span></h1>
+      <p class="lead" data-en="Turn four numbers into exactly 24, clear connected tiles, and set off satisfying chain reactions. A fresh twist on the classic 24 puzzle." data-zh="用四个数字算出24，消除相连数字，触发畅快连锁。熟悉的24点，加入全新的棋盘策略。">Turn four numbers into exactly 24, clear connected tiles, and set off satisfying chain reactions. A fresh twist on the classic 24 puzzle.</p>
+      <div class="cta"><a class="button" href="#how-to-play" data-en="Learn how to play" data-zh="了解玩法">Learn how to play</a><a class="button secondary" href="support.html" data-en="Get support" data-zh="获取支持">Get support</a></div>
+      <div class="chips"><span class="chip" data-en="6×6 number board" data-zh="6×6数字棋盘">6×6 number board</span><span class="chip" data-en="Daily Challenge" data-zh="每日挑战">Daily Challenge</span><span class="chip" data-en="Optional Game Center" data-zh="可选 Game Center">Optional Game Center</span></div>
+    </div>
+    <div><img class="hero-shot" src="assets/en_1.png" data-en-src="assets/en_1.png" data-zh-src="assets/zh_1.png" data-en-alt="Momo 24 gameplay on iPhone" data-zh-alt="Momo 24 iPhone 实际游戏画面" alt="Momo 24 gameplay on iPhone"><p class="caption" data-en="Actual Momo 24 gameplay." data-zh="Momo 24 实际游戏画面。">Actual Momo 24 gameplay.</p></div>
+  </section>
+
+  <section id="features" class="section">
+    <h2 data-en="More than making 24" data-zh="不止是凑出24">More than making 24</h2>
+    <p class="section-intro" data-en="Plan each expression, watch the board, and decide when to spend a hint or shuffle. Every clear can reshape your next move." data-zh="规划算式、观察棋盘，并决定何时使用提示或洗牌。每次消除都可能改变下一步局势。">Plan each expression, watch the board, and decide when to spend a hint or shuffle. Every clear can reshape your next move.</p>
+    <div class="grid">
+      <article class="card"><div class="icon" aria-hidden="true">🧮</div><h3 data-en="Build an exact 24" data-zh="算出准确的24">Build an exact 24</h3><p data-en="Choose four tiles and use each number once. Combine addition, subtraction, multiplication, division, and parentheses." data-zh="选择四块数字，每个数字使用一次。用加、减、乘、除和括号组成算式。">Choose four tiles and use each number once. Combine addition, subtraction, multiplication, division, and parentheses.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🔗</div><h3 data-en="Link your clears" data-zh="连线消除拿奖励">Link your clears</h3><p data-en="Choose connected numbers for linked bonuses. New tiles fill the spaces, and matching values can trigger cascades." data-zh="选择相连数字获得连线奖励。新数字补入空位后，相同数字还可能触发连锁。">Choose connected numbers for linked bonuses. New tiles fill the spaces, and matching values can trigger cascades.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🎯</div><h3 data-en="Play toward a goal" data-zh="围绕关卡目标布局">Play toward a goal</h3><p data-en="Meet changing level goals within a move limit, earn stars, and replay levels to improve your result." data-zh="在步数限制内完成不同关卡目标、收集星星，还可以重玩关卡提升成绩。">Meet changing level goals within a move limit, earn stars, and replay levels to improve your result.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">📅</div><h3 data-en="Return for a daily puzzle" data-zh="每日挑战换新题">Return for a daily puzzle</h3><p data-en="Take on a seeded daily board with ten moves. Complete all ten moves without hints to qualify for the Game Center daily leaderboard." data-zh="挑战每日生成的棋盘，在十步内规划得分。完成全部十步且未使用提示，才符合 Game Center 每日排行榜资格。">Take on a seeded daily board with ten moves. Complete all ten moves without hints to qualify for the Game Center daily leaderboard.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🏆</div><h3 data-en="Optional Game Center" data-zh="可选接入 Game Center">Optional Game Center</h3><p data-en="Sign in if you want to view achievements and submit eligible daily scores. Core gameplay and local progress work without signing in." data-zh="登录后可查看成就并提交符合条件的每日分数。不登录也能体验核心玩法，进度保存在本机。">Sign in if you want to view achievements and submit eligible daily scores. Core gameplay and local progress work without signing in.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">💡</div><h3 data-en="Choose your own pace" data-zh="按自己的节奏思考">Choose your own pace</h3><p data-en="Use hints and shuffles to explore a puzzle. Hints help you learn, while unassisted daily play keeps leaderboard eligibility." data-zh="使用提示和洗牌探索解法。提示能帮助你学习；每日挑战不使用提示才保留排行榜资格。">Use hints and shuffles to explore a puzzle. Hints help you learn, while unassisted daily play keeps leaderboard eligibility.</p></article>
+    </div>
+  </section>
+
+  <section id="how-to-play" class="section">
+    <h2 data-en="How to play" data-zh="开始游玩">How to play</h2>
+    <p class="section-intro" data-en="Simple rules, satisfying decisions. Make the equation, then make the board work for you." data-zh="规则简单，决策有趣。先组成算式，再让棋盘为你创造机会。">Simple rules, satisfying decisions. Make the equation, then make the board work for you.</p>
+    <div class="grid steps">
+      <article class="card step"><h3 data-en="Pick four numbers" data-zh="选择四个数字">Pick four numbers</h3><p data-en="Tap four tiles on the 6×6 board." data-zh="在6×6棋盘上点选四块数字。">Tap four tiles on the 6×6 board.</p></article>
+      <article class="card step"><h3 data-en="Make exactly 24" data-zh="组成准确的24">Make exactly 24</h3><p data-en="Add operators and parentheses. Each selected number must appear once in the expression." data-zh="加入运算符和括号。所选的每个数字都要在算式中出现一次。">Add operators and parentheses. Each selected number must appear once in the expression.</p></article>
+      <article class="card step"><h3 data-en="Clear and chain" data-zh="消除并触发连锁">Clear and chain</h3><p data-en="Submit the correct expression, earn linked bonuses, and use the new board to plan your next clear." data-zh="提交正确算式、获取连线奖励，再利用更新后的棋盘规划下一次消除。">Submit the correct expression, earn linked bonuses, and use the new board to plan your next clear.</p></article>
+    </div>
+  </section>
+
+  <section id="screenshots" class="section">
+    <h2 data-en="A look inside Momo 24" data-zh="看看萌萌24的实际画面">A look inside Momo 24</h2>
+    <p class="section-intro" data-en="Real screenshots from the game, including the puzzle board, level map, and achievements." data-zh="以下均为游戏实机截图，展示数字棋盘、关卡地图与成就。">Real screenshots from the game, including the puzzle board, level map, and achievements.</p>
+    <div class="gallery">
+      <figure><img loading="lazy" src="assets/en_1.png" data-en-src="assets/en_1.png" data-zh-src="assets/zh_1.png" data-en-alt="Momo 24 number puzzle gameplay" data-zh-alt="萌萌24数字益智玩法" alt="Momo 24 number puzzle gameplay"><figcaption data-en="Solve 24 on the 6×6 board" data-zh="在6×6棋盘上算出24">Solve 24 on the 6×6 board</figcaption></figure>
+      <figure><img loading="lazy" src="assets/en_2.png" data-en-src="assets/en_2.png" data-zh-src="assets/zh_2.png" data-en-alt="Momo 24 home screen" data-zh-alt="萌萌24首页" alt="Momo 24 home screen"><figcaption data-en="Choose a way to play" data-zh="选择游玩模式">Choose a way to play</figcaption></figure>
+      <figure><img loading="lazy" src="assets/en_3.png" data-en-src="assets/en_3.png" data-zh-src="assets/zh_3.png" data-en-alt="Momo 24 level map" data-zh-alt="萌萌24关卡地图" alt="Momo 24 level map"><figcaption data-en="Progress through the level map" data-zh="沿着关卡地图逐步前进">Progress through the level map</figcaption></figure>
+      <figure><img loading="lazy" src="assets/en_4.png" data-en-src="assets/en_4.png" data-zh-src="assets/zh_4.png" data-en-alt="Momo 24 achievements" data-zh-alt="萌萌24游戏成就" alt="Momo 24 achievements"><figcaption data-en="Track your achievements" data-zh="查看游戏成就">Track your achievements</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-en="Made for thoughtful play" data-zh="为专注思考而设计">Made for thoughtful play</h2>
+    <div class="split">
+      <article class="card"><h3 data-en="Your progress stays on your device" data-zh="游戏进度保存在本机">Your progress stays on your device</h3><p class="note" data-en="Level progress, unfinished rounds, preferences, scores, and achievements are stored locally. Game Center can sync eligible scores and achievements when you opt in; it does not back up your full game save." data-zh="关卡进度、未完成回合、偏好设置、分数和成就保存在本机。选择登录后，Game Center 可同步符合条件的分数和成就，但不会备份完整游戏存档。">Level progress, unfinished rounds, preferences, scores, and achievements are stored locally. Game Center can sync eligible scores and achievements when you opt in; it does not back up your full game save.</p></article>
+      <article class="card"><h3 data-en="No ads or tracking SDKs" data-zh="没有广告或跟踪 SDK">No ads or tracking SDKs</h3><p class="note" data-en="This version has no advertising, tracking, third-party analytics SDK, or developer-operated gameplay server. Game Center is provided by Apple and is optional." data-zh="此版本不含广告、跟踪、第三方分析 SDK 或开发者运营的游戏服务器。Game Center 由 Apple 提供，且为可选功能。">This version has no advertising, tracking, third-party analytics SDK, or developer-operated gameplay server. Game Center is provided by Apple and is optional.</p></article>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0"><div class="card"><h2 data-en="Need a hand?" data-zh="需要帮助？">Need a hand?</h2><p class="section-intro" data-en="Visit the support page for gameplay tips, daily leaderboard rules, Game Center troubleshooting, and contact information." data-zh="前往支持页面查看玩法说明、每日排行榜规则、Game Center 排查建议和联系方法。">Visit the support page for gameplay tips, daily leaderboard rules, Game Center troubleshooting, and contact information.</p><div class="cta"><a class="button" href="support.html" data-en="Momo 24 Support" data-zh="萌萌24支持页面" data-en-href="support.html" data-zh-href="zh-Hans/support.html">Momo 24 Support</a><a class="button secondary" href="privacy.html" data-en="Privacy Policy" data-zh="隐私政策" data-en-href="privacy.html" data-zh-href="zh-Hans/privacy.html">Privacy Policy</a></div></div></section>
+</main>
+<footer><div class="container footerrow"><span>© 2026 CXY Studio</span><div class="footerlinks"><a href="support.html" data-en="Support" data-zh="支持" data-en-href="support.html" data-zh-href="zh-Hans/support.html">Support</a><a href="privacy.html" data-en="Privacy Policy" data-zh="隐私政策" data-en-href="privacy.html" data-zh-href="zh-Hans/privacy.html">Privacy Policy</a><a href="mailto:chenkai_dr@hotmail.com" data-en="Contact" data-zh="联系">Contact</a></div></div></footer>
+<script>
+  function setLang(lang){
+    lang=lang==='zh'?'zh':'en';
+    document.documentElement.lang=lang==='zh'?'zh-Hans':'en';
+    document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.getAttribute(lang==='zh'?'data-zh':'data-en')});
+    document.querySelectorAll('img[data-en-src]').forEach(img=>{img.src=img.getAttribute(lang==='zh'?'data-zh-src':'data-en-src');img.alt=img.getAttribute(lang==='zh'?'data-zh-alt':'data-en-alt')});
+    document.querySelectorAll('a[data-en-href]').forEach(a=>{a.href=a.getAttribute(lang==='zh'?'data-zh-href':'data-en-href')});
+    const description=document.getElementById('meta-desc');
+    description.content=description.getAttribute(lang==='zh'?'data-zh':'data-en');
+    document.getElementById('btn-en').classList.toggle('active',lang==='en');
+    document.getElementById('btn-zh').classList.toggle('active',lang==='zh');
+    document.getElementById('btn-en').setAttribute('aria-pressed',String(lang==='en'));
+    document.getElementById('btn-zh').setAttribute('aria-pressed',String(lang==='zh'));
+    try{localStorage.setItem('momo24-lang',lang)}catch(error){}
+  }
+  document.getElementById('btn-en').addEventListener('click',()=>setLang('en'));
+  document.getElementById('btn-zh').addEventListener('click',()=>setLang('zh'));
+  let saved;try{saved=localStorage.getItem('momo24-lang')}catch(error){}
+  setLang(saved||(navigator.language&&navigator.language.toLowerCase().startsWith('zh')?'zh':'en'));
+</script>
+</body>
+</html>
